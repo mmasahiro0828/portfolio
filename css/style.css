@@ -1,3 +1,447 @@
+/*==========================基本設定==========================*/
+
+.disapper {
+    display: none;
+}
+
+html {
+    font-size: 15px;
+}
+body, div, p, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper-for-responsive {
+    overflow: hidden;
+}
+
 h1 {
-    color: green;
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.pop-font {
+    font-family: 'Squada One', cursive;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -20;
+    background-size: cover;
+}
+
+.bg-overlay {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
+}
+
+/*==========================ビデオ==========================*/
+
+.header-bg.bg-img {
+    height: 600px;
+}
+
+
+/*==========================オーバーレイ画像==========================*/
+.header-bg.bg-overlay {
+    height: 600px;
+    background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%);
+    opacity: 0.55;
+}
+
+
+/*==========================スティッキーヘッダー==========================*/
+
+.sticky-header {
+    position: fixed;
+    z-index: 10;
+    top: -67px;
+    left: -67px;
+    height: 120px;
+    width: 120px;
+    background-image: linear-gradient(#d57558 0%, #5bd224 100%);
+    transform : rotate(45deg);
+    display: none;
+}
+
+.sticky-header:after {
+    position: absolute;
+    content: "TOP";
+    font-size: 1.1rem;
+    font-weight: bold;
+    top: 45px;
+    left: 80px;
+    color: white;
+    transform : rotate(-45deg);
+}
+
+.sticky-header:hover {
+    cursor: pointer;
+}
+
+
+/*==========================メインヘッダー==========================*/
+
+.main-header {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+}
+
+.main-header .main-title {
+    color: yellow;
+    padding-top: 12rem;
+}
+
+.main-header .sub-title {
+    color: white;
+    opacity: 0.8;
+
+}
+
+.contents-wrapper .contents {
+    margin: 5rem auto 0 auto;
+    width: 80%;
+    max-width: 850px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 23%;
+    max-width: 150px;
+    position: relative;
+}
+
+.content:before {
+	content:"";
+	display: block;
+	padding-top: 100%;
+}
+    
+.content-inner {
+	position: absolute;
+	top: 50%;
+	left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.content i, .content h2 {
+    color: white;
+}
+
+.content-inner:hover {
+    opacity: 1;
+    font-size: 1.4rem;
+    transition: 0.5s;
+    
+}
+
+
+
+
+@media screen and (max-width: 650px) {
+
+    .main-header .main-title {
+        padding-top: 4rem;
+    }
+
+    .contents-wrapper .contents {
+        width: 350px;
+    }
+
+    .content {
+        width: 40%;
+        max-width: 155px;
+    }
+
+    .content:before {
+        padding-top: 80%;
+    }
+
+    .content:nth-child(-n+2) {
+        margin-bottom: 3rem;
+    }
+    
+
+}
+
+
+/*==========================contents-part==========================*/
+
+.contents-part {
+    text-align: center;
+}
+
+.part-title {
+    padding-top: 3rem;
+}
+
+
+/*-----------------profile-part----------------------*/
+
+.profile-wrapper {
+    width: 70%;
+    min-width: 500px;
+    margin: 5rem auto 10rem auto;
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+}
+
+.profile-inner-1, .profile-inner-2 {
+    width: 48%;
+}
+
+.profile-inner-2 {
+    margin-left: 2rem;
+}
+
+
+.profile-item {
+    text-align: left;
+    box-sizing: border-box;
+    padding-top: 1rem;
+}
+
+
+.profile-icon {
+    text-align: center;
+    padding: 0;
+}
+
+.profile-icon img {
+    width: 40%;
+    min-width: 180px;
+    border-radius: 50%;
+}
+
+.profile-icon p {
+    padding: 1rem 0;
+}
+
+
+@media screen and (max-width: 950px) {
+    
+    .profile-wrapper {
+        min-width: 75%;
+        display: flex;
+        flex-flow: column;
+        font-size: 0.8rem;
+    }
+
+    .profile-inner-1, .profile-inner-2 {
+        width: 100%;
+    }
+
+}
+
+
+/*-----------------skill-part----------------------*/
+.skill-part {
+    height: 600px;
+    position: relative;
+}
+
+.skill-part-bg.bg-img {
+    height: 600px;
+    object-position: 15% 100%;
+}
+
+.skill-part-bg.bg-overlay {
+    height: 600px;
+    background: pink;
+    opacity: 0.7;
+}
+
+
+
+
+/*-----------------works-part----------------------*/
+
+.works-part {
+}
+
+.works-wrapper {
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.work-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.work-icon {
+    width: 30%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.work-icon img {
+    display: block;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid rgb(37, 37, 37);
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+
+.work-icon img:hover {
+    border: 5px solid rgb(240, 105, 127);
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+.work-icon.picked img {
+    width: 100%;
+    padding: 0;
+    filter: grayscale(0);
+}
+
+.work-icon.picked img:hover {
+    border: 1px solid rgb(37, 37, 37);
+    cursor: default;
+}
+
+.work-icon.picked:after {
+    content: "";
+    position: absolute;
+    top: 100;
+    left: 50;
+    transform: translateX(-50%);
+    border-bottom: 3.5rem solid rgb(203, 245, 247);
+    border-left: 4rem solid transparent;
+    border-right: 4rem solid transparent;
+}
+
+.work-description {
+    width: 90%;
+    background: rgb(203, 245, 247);
+    margin: 3rem auto 0 auto;
+    padding: 3.5rem 0;
+}
+
+.work-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.work-details {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.work-detail {
+    display: flex;
+    text-align: left;
+    padding: 1rem 0;
+    border-bottom: 1px solid gray;
+}
+
+.work-detail:last-child {
+    border-bottom: none;
+}
+
+.detail-title {
+    width: 20%;
+    font-weight: bold;
+}
+
+.detail-description {
+    width: 80%;
+    padding-right: 2rem;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 800px) {
+    
+    .work-description {
+        font-size: 0.8rem;
+    }
+
+    .work-detail {
+        flex-flow: column;
+    }
+
+    .detail-title {
+        width: 100%;
+    }
+
+    .detail-description {
+        width: 100%;
+        padding-left: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .work-details {
+        width: 90%;
+    }
+
+}
+
+
+/*-----------------contact-part----------------------*/
+
+.contact-part {
+    height: 600px;
+    color: white;
+    position: relative;
+}
+
+.contact-part-bg.bg-img {
+    height: 600px;
+    object-position: 80% 80%;
+}
+
+.contact-part-bg.bg-overlay {
+    height: 600px;
+    background: black;
+    opacity: 0.85;
+}
+
+.contact-wrapper {
+    padding-top: 7rem;
+    font-size: 1.2rem;
+}
+
+.contact-method {
+    background: rgba(0,0,0,0.6);
+    margin: 2rem auto 0 auto;
+    padding: 1rem 2rem;
+    width: 60%;
+    border-radius: 5px;
 }
