@@ -19,7 +19,7 @@
 <body>
     <div class="wrapper-for-responsive">
         <div class="main-header">
-            <video class="header-bg bg-img" src="images/banana_video.mp4" poster="images/bananas.jpg" playsinline autoplay muted loop></video>
+            <video class="header-bg bg-img" src="images/banana_video.mp4" poster="images/banana_poster.png" playsinline autoplay muted loop></video>
             <div class="header-bg bg-overlay"></div>
             
             <div class="sticky-header"></div>  
@@ -89,33 +89,32 @@
 
                     <div class="main-profile profile-item">
                         <span style="font-weight: bold">自己紹介:</span><br>
-                        自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。
-                        <br>
-                        自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。自己紹介文です。    
+                        はじめまして、宮口真大です。
+                        大学卒業後、アパレル業界に入り、直近ではECチャネルの売上管理を担っていました。
+                        ただ、もっと技術的な部分から売上や業務改善に貢献したい！という思いが生まれ、IT業界への転職を決意しました。<br>
+                        現在はプログラミングスクールに通い、アプリ開発を通してプログラミングを学んでいます。
+                        まずはガムシャラに実務をこなし、様々な技術に触れ、その中で専門性を見つけていきたいと考えています。
+                        ゼロからのスタートですが、10年後、より大きな価値を創れる人材になるために、日々努力し続けます。 
                     </div>
                 </div>
                     
                 <div class="profile-inner-2">
                     <div class="history profile-item">
                         <span style="font-weight: bold">略歴:</span><br>
-                        略歴です。略歴です。略歴です。略歴です。略歴です。略歴です。略歴です。略歴です。略歴です。略歴です。略歴です。略歴です。略歴です。略歴です。略歴です。略歴です。略歴です。
-                    </div>
-                        
-                    <div class="strong-point profile-item">
-                        <span style="font-weight: bold">強み:</span><br>
-                        強みです。強みです。強みです。強みです。強みです。強みです。強みです。強みです。強みです。強みです。強みです。強みです。強みです。強みです。強みです。強みです。強みです。強みです。強みです。強みです。
+                        1991年生まれ、28歳。<br>
+                        2016年に大阪大学医学部保健学科を卒業し、アパレル業界で約3年半働く。<br>
+                        2019年9月、IT業界への転職のため会社を辞め、<br>
+                        現在はプログラミングスクールにて勉強中。
                     </div>
                         
                     <div class="licenses profile-item">
                         <span style="font-weight: bold">資格:</span><br>
-                        ・資格<br>
-                        ・資格<br>
-                        ・資格<br>
+                        ・TOEIC SCORE:865<br>
                     </div>
 
                     <div class="hobies profile-item">
                         <span style="font-weight: bold">趣味など:</span><br>
-                        趣味です。趣味です。趣味です。趣味です。趣味です。趣味です。趣味です。趣味です。趣味です。
+                        趣味はNBA観戦です。日本人として八村塁選手を全力で応援しています。
                     </div>
                 </div>
 
@@ -132,7 +131,41 @@
                 <i class="fas fa-chart-bar fa-lg" style="margin-right: 1rem"></i>SKILL
             </h2>
             <div class="skill-wrapper">
+                    <ul class="skill-details">
 
+                        <li class="skill-detail">
+                            <div class="skill-title">言語:</div>
+                            <div class="skill-description">
+                                ◾️HTML/CSS<br>
+                                仕様書などの完成物のスタイルを再現できる。レスポンシブなスタイルを書ける。<br><br>
+                                ◾️JavaScript<br>
+                                サイトに動的な動きをつけることができる。jQueryを使用できる。<br><br>
+                                ◾️Ruby<br>
+                                基本構文を使える。オブジェクト指向の概要を理解している。
+                            </div>
+                        </li>
+
+                        <li class="skill-detail">
+                            <div class="skill-title">フレームワーク:</div>
+                            <div class="skill-description">
+                                ◾️Ruby on Rails<br>
+                                典型的なCRUDが作れる。一対多、多対多のアソシエーションが組める。<br>
+                                有名なgemの利用経験あり(bycrypt,kaminariなど)。Ajax非同期処理での実装ができる。
+                                slimでの構文を書ける。
+                            </div>
+                        </li>
+
+                        <li class="skill-detail">
+                            <div class="skill-title">その他:</div>
+                            <div class="skill-description">
+                                ・sessionの仕組みを理解し、ログイン機能を実装できる。<br>
+                                ・基本的なgitコマンドが使え、バージョン管理ができる。<br>
+                                ・基本的なlinuxコマンドが使える。
+                            </div>
+                        </li>
+
+
+                    </ul>
             </div>
         </div>
 
@@ -216,15 +249,16 @@
                             <div class="detail-description">
                                 ◾️テストユーザー(管理者権限あり)<br>
                                 　email: mmmm@mm.jp、pass: password<br>
-                                　(ログインなしでもゲストユーザーとして商品購入が可能です)<br><br>
+                                　<span style="font-size:0.8em">※ログインなしでもゲストユーザーとして商品購入が可能です</span><br><br>
 
                                 ◾️カード決済用のテストカード<br>
                                 　カード番号: 4242 4242 4242 4242、<br>
                                 　有効期限: 未来の日付、<br>
-                                　セキュリティコード・名前: 任意
+                                　セキュリティコード・名前: 任意<br><br>
 
-                                ◾️今後の制作予定として
-                                　現在、管理者画面での商品登録(画像のアップロード・表示)や、売上情報の表示機能を作成中。
+                                ◾️今後の制作予定として<br>
+                                　現在、管理者画面を作成中。<br>
+                                　商品登録(画像のアップロード含む)や、売上情報の表示機能を実装予定。
                             </div>
                         </li>
 
@@ -274,7 +308,7 @@
                             <div class="detail-description">
                                 これまで作成した作品を載せるためのポートフォリオサイトです。<br>
                                 最低限の情報のみのシンプルな構成、ストレスフリーなUX、レスポンシブデザインを意識して作成しました。<br>
-                                また、明るい印象を与えられるよう、ポップでキャッチーなデザインで仕上げました。
+                                また、明るい印象を与えられるよう、ポップでキャッチーなデザインに仕上げました。
                             </div>
                         </li>
 
@@ -306,7 +340,7 @@
                             <div class="detail-title">説明:</div>
                             <div class="detail-description">
                                 Railsを用いたアプリ開発の基本の理解のために作成しました。<br>
-                                CRUD機能や、データの表示、session、画像の保存、AJAX非同期処理など、サーバーサイドの動きの理解を一番の目的としていたため、
+                                CRUD機能や、データの表示、session、画像の保存、AJAX非同期処理など、サーバサイドの動きの理解を一番の目的としていたため、
                                 デザインはbootstrapを用いた最低限のもののみです。
                             </div>
                         </li>
